@@ -1,0 +1,110 @@
+.header {
+  background-image: url("../images/pattern-light-bg.svg"),
+    url("../images/pattern-glow.svg");
+  background-repeat: repeat, no-repeat;
+  background-position: center, top right -355px;
+  padding-bottom: 8rem;
+  background-color: $light-salmon-50;
+}
+
+.header__logo {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+.header__hero {
+  padding-top: 4.8rem;
+}
+.header__hero__container {
+  display: flex;
+  align-items: center;
+  grid-gap: 6.4rem;
+}
+
+.header__hero__title {
+  background: linear-gradient(107.24deg, #fea36f -11.37%, #062630 61.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2.4rem;
+}
+
+.header__hero__text {
+  margin-bottom: 3.2rem;
+  color: $neutral-700;
+}
+
+.header__hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  margin-bottom: 2rem;
+  background-color: $light-salmon-50;
+}
+
+.header__hero-btn:hover {
+  background: linear-gradient(90deg, #ffe2d1 0%, #fff5ef 100%);
+}
+
+.btn-text {
+  color: $neutral-900;
+  display: flex;
+}
+
+.btn-text::after {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icon-arrow-down.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-left: 1.6rem;
+}
+
+.header__hero__members {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.header__hero__members__wrapper {
+  margin-left: 1.2rem;
+}
+.header__hero__members__stars {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.header__hero__members__text {
+  color: $neutral-700;
+}
+
+.header__hero__image {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 850px) {
+  .header {
+    background-position: center, bottom -300px left;
+  }
+
+  .header__hero {
+    padding-top: 3.2rem;
+  }
+
+  .header__hero__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__hero-btn {
+    font-size: 1.6rem;
+  }
+
+  .header__hero__title {
+    font-size: 3.8rem;
+  }
+}

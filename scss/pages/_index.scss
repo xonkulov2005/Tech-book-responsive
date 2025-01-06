@@ -1,0 +1,438 @@
+.main {
+  padding-top: 12rem;
+}
+.second__container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 12rem;
+}
+.second__container__reading__img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.second__container__title {
+  color: $neutral-900;
+  margin-bottom: 3.4rem;
+}
+.second__container__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.second__container__text {
+  color: $neutral-700;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.second__container__text:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.second__container__text::before {
+  display: inline-block;
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-image: url("../../images/icon-check.svg");
+  margin-right: 1.4rem;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 850px) {
+  .main {
+    padding-top: 8rem;
+  }
+
+  .second__container {
+    flex-direction: column-reverse;
+    gap: 4rem;
+    margin-bottom: 8rem;
+  }
+
+  .second__container__title {
+    margin-bottom: 3.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    padding-top: 6.4rem;
+  }
+
+  .second__container {
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 6rem;
+  }
+
+  .second__container__title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 44.2px;
+    letter-spacing: -2px;
+    margin-bottom: 2.4rem;
+  }
+  .second__container__text:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+}
+
+.thirt__section__container {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  position: relative;
+  margin-bottom: 12rem;
+}
+
+.logos-tech-img {
+  position: absolute;
+  z-index: 1;
+  bottom: 1.5rem;
+  left: 54%;
+}
+
+.thirt__section__title {
+  color: $neutral-900;
+  margin-bottom: 2.4rem;
+}
+
+.hero__word {
+  z-index: 0;
+  position: relative;
+}
+
+.circle-img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -15px;
+}
+
+.thirt__section__text {
+  color: $neutral-700;
+  font-weight: 400;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+.thirt__section__img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 850px) {
+  .thirt__section__container {
+    gap: 4rem;
+    flex-direction: column;
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .thirt__section__container {
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 6.4rem;
+  }
+  .thirt__section__title {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 44.2px;
+    letter-spacing: -2px;
+  }
+  .circle-img {
+    width: 10rem;
+    height: 5rem;
+  }
+  .logos-tech-img {
+    display: none;
+  }
+}
+
+.fourth__section__container {
+  text-align: center;
+  background-image: url("../images/pattern-light-bg.svg"),
+    url("../images/pattern-glow.svg");
+  background-repeat: repeat, no-repeat;
+  background-position: center, top right -350px;
+  padding: 8rem 6rem;
+  border: $neutral-100 solid 1px;
+  border-radius: 20px;
+  background-color: $light-salmon-50;
+}
+.fourth__section__title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.04rem;
+  color: $neutral-900;
+  margin-bottom: 6.4rem;
+}
+.fourth__section__content {
+  display: grid;
+  grid-template-columns: repeat(7, 216px);
+  grid-template-rows: repeat(1, 110px);
+  gap: 4rem;
+  text-align: left;
+}
+.fourth__section__text {
+  font-weight: 600;
+  color: $neutral-900;
+  position: relative;
+  &__img {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.pattern-arrow-img {
+  position: absolute;
+  top: 0;
+  left: 14.5rem;
+}
+@media screen and (max-width: 1200px) {
+  .fourth__section {
+    max-width: 970rem;
+    height: 52rem;
+    padding: 8rem 6rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .fourth__section {
+    display: none;
+  }
+}
+
+.five__section {
+  padding-top: 12rem;
+}
+.five__section__container {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  color: $neutral-900;
+}
+
+.five__section__container__title {
+  font-weight: 600;
+  margin-bottom: 6.4rem;
+  text-align: center;
+}
+
+.five__section__container__cta {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.five__section__container__wrapper {
+  padding: 2.4rem;
+  text-align: start;
+  border: 1px $neutral-200 solid;
+  border-radius: 12px;
+  &:nth-child(2) {
+    max-width: 350px;
+    max-height: 390px;
+    padding: 5rem 2.4rem;
+    background-color: $light-salmon-50;
+    background-image: url(../../images/pattern-glow.svg);
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+.five__section__container__item {
+  font-weight: 600;
+}
+
+.five__section__text {
+  color: $neutral-700;
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+  margin-top: 2.4rem;
+}
+
+.item-text {
+  font-weight: 600;
+  color: $neutral-900;
+}
+.main__divider {
+  width: 238px;
+  height: 1px;
+  color: $neutral-200;
+  margin-bottom: 2.4rem;
+}
+
+.five__section__text-r {
+  color: $neutral-700;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  &::before {
+    text-align: center;
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../../images/icon-check.svg");
+    margin-right: 1.2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.about {
+  margin-bottom: 3.6rem;
+}
+
+@media screen and (max-width: 850px) {
+  .five__section {
+    padding-top: 0px;
+  }
+  .five__section__container {
+    flex-direction: column;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+  .five__section__container__cta {
+    flex-direction: column;
+  }
+  .five__section__container__title {
+    text-align: start;
+    margin-bottom: 4rem;
+  }
+
+  .five__section__container__wrapper {
+    max-width: 340px;
+    max-height: 358px;
+  }
+  .main__btn__first {
+    max-width: 292px;
+    max-height: 63px;
+  }
+  .main__btn__second {
+    max-width: 292px;
+    max-height: 63px;
+  }
+  .main__btn__thirt {
+    max-width: 292px;
+    max-height: 63px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .five__section__container {
+    flex-direction: column;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+
+  .five__section__container__cta {
+    flex-direction: column;
+  }
+  .five__section__container__title {
+    margin-bottom: 2.4rem;
+    text-align: start;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 44.2px;
+    letter-spacing: -2px;
+  }
+
+  .five__section__container__wrapper {
+    max-width: 340px;
+    max-height: 356px;
+  }
+  .btn-text-second {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.8px;
+    letter-spacing: -1px;
+  }
+  .main__btn__first {
+    max-width: 292px;
+    max-height: 61px;
+  }
+  .main__btn__second {
+    max-width: 292px;
+    max-height: 61px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .main__btn__thirt {
+    max-width: 292px;
+    max-height: 61px;
+  }
+}
+.sixth__section {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.sixth__section__container {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  text-align: center;
+}
+.sixth__section__starts {
+  display: grid;
+  place-content: center;
+  gap: 6px;
+  grid-template-columns: repeat(5, 28px);
+  margin-bottom: 3.2rem;
+}
+.sixth__section__starts__btn {
+  display: inline-block;
+}
+.sixth__section__title {
+  font-weight: 600;
+  color: $neutral-900;
+  margin-bottom: 3.2rem;
+}
+.sixth__section__text {
+  font-weight: 400;
+  color: $neutral-700;
+}
+
+@media screen and (max-width: 850px) {
+  .sixth__section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .sixth__section__container {
+    text-align: left;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sixth__section {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
+  .sixth__section__container {
+    text-align: left;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+
+  .sixth__section__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26.4px;
+    letter-spacing: -1px;
+  }
+  .sixth__section__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+}

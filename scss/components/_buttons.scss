@@ -1,0 +1,42 @@
+.btn {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 8px;
+  border: solid 2px #062630;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-text-second {
+  color: #062630;
+  font-weight: 600;
+  margin-top: 6.6rem;
+}
+.main__btn__first {
+  text-decoration: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: $light-salmon-50;
+}
+.main__btn__second {
+  text-decoration: none;
+  padding-left: 7.3rem;
+  padding-right: 7.3rem;
+  background-color: $light-salmon-50;
+}
+.main__btn__thirt {
+  text-decoration: none;
+  padding-left: 5.7rem;
+  padding-right: 5.7rem;
+  background-color: $light-salmon-50;
+}
+.footer__btn {
+  text-decoration: none;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  border: 2px $neutral-0 solid;
+  margin-bottom: 2.4rem;
+  align-items: center;
+}
+.footer__btn:hover {
+  background: $text-gradient;
+}
